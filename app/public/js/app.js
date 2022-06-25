@@ -8,6 +8,7 @@
 
     Init() {
       this.heroHeight();
+      this.toggleMobileNav();
     };
 
     heroHeight() {
@@ -18,6 +19,16 @@
 
       hero.style.height = height;
       heroContainer.style.height = height;
+    };
+
+    toggleMobileNav() {
+      const burger = document.getElementById('burger');
+      const nav = document.getElementById('nav');
+
+      burger.addEventListener('click', e => {
+        e.preventDefault();
+        nav.classList.toggle('active');
+      });
     };
   };
 
