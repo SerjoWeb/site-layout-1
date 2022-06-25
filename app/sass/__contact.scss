@@ -1,0 +1,58 @@
+.contact {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: $bgLight;
+
+  .contact-form {
+    max-width: 770px;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $brownText;
+      text-transform: uppercase;
+      margin-bottom: 90px;
+    }
+
+    form {
+      input, textarea {
+        width: 100%;
+        border-top: 3px solid $black;
+        background-color: transparent;
+        padding: 18px;
+        color: $greyDarkkText;
+        font-size: .9rem;
+      }
+
+      input {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      textarea {
+        margin-top: 30px;
+        margin-bottom: 31px;
+        border-bottom: 1px solid $black;
+        min-height: 148px;
+      }
+
+      button {
+        width: 171px;
+        height: 45px;
+        border: 3px solid $black;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 0 auto;
+        cursor: pointer;
+        @include transform-bgc;
+
+        &:hover {
+          background-color: $btnWhiteHover;
+        }
+      }
+    }
+  }
+}

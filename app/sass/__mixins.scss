@@ -1,0 +1,25 @@
+@mixin underline($color) {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  content: '';
+  height: 5px;
+  width: 100%;
+  background-color: $color;
+}
+
+@mixin transform-bgc {
+  -o-transition: background-color .4s ease-in-out;
+  -ms-transition: background-color .4s ease-in-out;
+  -moz-transition: background-color .4s ease-in-out;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
+}
+
+@mixin transform-color {
+  -o-transition: color .4s ease-in-out;
+  -ms-transition: color .4s ease-in-out;
+  -moz-transition: color .4s ease-in-out;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}

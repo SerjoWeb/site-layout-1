@@ -1,0 +1,37 @@
+header {
+  background-color: $bgBlackLighter;
+
+  * {
+    color: $white;
+  }
+
+  nav {
+    .burger {
+      display: none;
+      visibility: hidden;
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+
+        a {
+          text-transform: uppercase;
+          position: relative;
+          
+          &:after {
+            @include underline($bgBlackLighter);
+            @include transform-bgc;
+          }
+          &:hover {
+            &:after {
+              background-color: $brownText;
+            }
+          }
+        }
+      }
+    }
+  }
+}

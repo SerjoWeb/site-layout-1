@@ -1,0 +1,111 @@
+.blog {
+  padding-top: 128px;
+  padding-bottom: 219px;
+
+  .intro {
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $brownText;
+      text-transform: uppercase;
+      margin-bottom: 85px;
+      position: relative;
+
+      &:after {
+        @include underline($brownText);
+        top: 84px;
+        width: 100px;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    p {
+      line-height: 1.06rem;
+      text-align: center;
+      color: $brownDarkerText;
+    }
+  }
+
+  .blog-list {
+    margin-top: 91px;
+
+    .blog-item {
+      &:not(:last-child) {
+        margin-bottom: 61px;
+      }
+
+      .gallery {
+        position: relative;
+
+        .controls {
+          display: none;
+          visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          z-index: 100;
+          width: 474px;
+          height: 270px;
+          padding: 0 27px;
+
+          div {
+            width: 100%;
+
+            a {
+              i {
+                font-size: 2rem;
+                color: $brownText;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .controls {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            visibility: visible;
+          }
+        }
+      }
+
+      .info {
+        padding-left: 81px;
+
+        .date {
+          font-size: .9rem;
+          color: $brownText;
+          font-weight: 500;
+          margin-bottom: 21px;
+        }
+
+        h5 {
+          color: $brownDarkerDoubleText;
+          font-size: 1.5rem;
+          margin-bottom: 24px;
+        }
+
+        .text {
+          font-size: .9rem;
+          color: $greyText;
+          line-height: 1.8rem;
+
+          a {
+            color: $greyText;
+          }
+        }
+      }
+
+      &.inversed {
+        .info {
+          padding-left: 0;
+          padding-right: 81px;
+        }
+      }
+    }
+  }
+}

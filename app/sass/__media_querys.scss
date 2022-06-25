@@ -1,0 +1,178 @@
+@media only screen and (max-width: 900px) {
+  .blog {
+    .blog-list {
+      .blog-item {
+        .gallery {
+          width: 316px;
+          height: 180px;
+
+          .controls {
+            width: 316px;
+            height: 180px;
+          }
+
+          img {
+            width: 316px;
+            height: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .hero {
+    .info {
+      h1, h1 span {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .services {
+    .items {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+      .item {
+        width: 100%;
+        max-width: 100%;
+
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .blog {
+    .blog-list {
+      .blog-item {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .gallery {
+          margin: 0 auto;
+        }
+
+        .info {
+          width: 100%;
+          padding: 0;
+          margin-top: 30px;
+        }
+
+        &.inversed {
+          .gallery {
+            order: 1;
+          }
+
+          .info {
+            order: 2;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-header {
+      .item {
+        flex: unset;
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header {
+    nav {
+      .burger {
+        display: block;
+        visibility: visible;
+
+
+        i {
+          font-size: 2rem;
+          @include transform-color;
+        }
+
+        &:hover {
+          i {
+            color: $brownText;
+          }
+        }
+      }
+
+      .nav {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .hero {
+    .info {
+      h1, h1 span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .hero {
+    .info {
+      h1, h1 span {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .blog {
+    .blog-list {
+      .blog-item {
+        .gallery {
+          width: 237px;
+          height: 135px;
+
+          .controls {
+            width: 237px;
+            height: 135px;
+          }
+
+          img {
+            width: 237px;
+            height: 135px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .hero {
+    .info {
+      button {
+        width: 171px;
+      }
+    }
+  }
+}

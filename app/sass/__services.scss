@@ -1,0 +1,50 @@
+.services {
+  padding-top: 92px;
+
+  .intro {
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $brownText;
+      text-transform: uppercase;
+      margin-bottom: 37px;
+    }
+
+    p {
+      line-height: 1.8rem;
+      text-align: center;
+    }
+  }
+
+  .items {
+    margin-top: 94px;
+
+    .item {
+      text-align: center;
+      max-width: 371px;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: $brownText;
+      }
+
+      h4 {
+        margin-top: 31px;
+        font-size: 1.2rem;
+        color: $brownDarkText;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 32px;
+        color: $brownLightText;
+        font-size: .9rem;
+      }
+    }
+  }
+}

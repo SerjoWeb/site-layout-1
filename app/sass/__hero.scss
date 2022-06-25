@@ -1,0 +1,51 @@
+.hero {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+
+  .info {
+    p, h1, span, button {
+      text-transform: uppercase;
+      color: $white;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin-bottom: 69px;
+    }
+
+    h1, h1 span {
+      font-size: 4rem;
+    }
+
+    h1 span {
+      color: $brownText;
+    }
+
+    button {
+      width: 264px;
+      height: 58px;
+      background-color: #272420;
+      cursor: pointer;
+      border-radius: 4px;
+      @include transform-bgc;
+
+      span {
+        &:first-child {
+          margin-right: 13px;
+        }
+      }
+
+      &:hover {
+        background-color: $btnBlackHover;
+      }
+    }
+  }
+}
